@@ -1,3 +1,12 @@
-> 1%
-last 2 versions
-not dead
+# .browserslistrc 文件，指定了项目的目标浏览器的范围。
+# 这个值会被 @babel/preset-env 和 Autoprefixer 用来确定需要转译的 JavaScript 特性和需要添加的 CSS 浏览器前缀。
+
+# 兼容到超過百分之1的用戶使用的瀏覽器
+# > 1%
+
+# 兼容到最後的兩個版本
+# last 2 versions
+# not dead
+
+Android >= 4.0
+ios >= 8

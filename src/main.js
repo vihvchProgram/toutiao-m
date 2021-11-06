@@ -3,9 +3,6 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-// 加載全局樣式
-import './styles/index.less'
-
 // 加載Vant組件庫
 import Vant from 'vant'
 
@@ -14,6 +11,9 @@ import 'vant/lib/index.css'
 
 // 自動設置 REM 基準值 (html 標籤字體大小)
 import 'amfe-flexible'
+
+// 加載全局樣式 (最好放到最後import，方便去覆蓋第三方樣式)
+import './styles/index.less'
 
 // 全局註冊Vant中的組件
 Vue.use(Vant)
